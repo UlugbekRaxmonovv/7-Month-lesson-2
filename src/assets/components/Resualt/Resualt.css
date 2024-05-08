@@ -1,0 +1,6 @@
+.input >button:disabled{
+    background-color: aquamarine;
+}
+.input >button{
+    background-color: aqua;
+}
