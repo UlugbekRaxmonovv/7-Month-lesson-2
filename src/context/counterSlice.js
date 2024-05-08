@@ -2,14 +2,14 @@ import { createSlice } from '@reduxjs/toolkit'
 export const counterSilce = createSlice({
     name: 'counter',
     initialState:{
-        value: 1
+        value: 0
     },
     reducers:{
         inc(state,name){
             state.value +=name.payload
-        },
-        dec(state){
-            state.value -=1
+        },  
+        dec(state,name){
+            state.value -=name.payload
         },
         all(state){
             state.value =0

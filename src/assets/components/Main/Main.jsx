@@ -8,13 +8,13 @@ import './Main.css'
 const Main = () => {
     const dispatch = useDispatch() 
     const[ name,setName] = useState('')
-    const Add = () => {
-    if(name !== ''){
-      dispatch
-      dispatch(inc(parseInt(name)))
-      setName
-      setName('')
-    }
+    const handleIncrement = () => {  
+ if(name !== ''){
+    dispatch
+    dispatch(inc(parseInt(name)))
+    setName
+    setName('')
+  }
 
     }
     return (
@@ -26,7 +26,7 @@ const Main = () => {
             placeholder='Son kiriting..'/>
            </div>
             <Button style={{backgroundColor:'#28803C',fontSize:'20px',padding:'12.5px 52px'}} 
-            onClick={Add } 
+            onClick={handleIncrement } 
              variant="contained"><VscAdd />
             </Button>
         </div>

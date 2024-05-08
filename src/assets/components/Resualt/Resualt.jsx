@@ -9,15 +9,20 @@ import { useSelector } from 'react-redux';
 
 
 const Resualt = () => {
-    const count = useSelector(state => state.counter.value)
+  const count = useSelector(state => state.counter.value)
 
     const [name,setName] =useState('')
     const dispatch = useDispatch() 
-    const  add= ()=>{
-        dispatch(dec())
-     setName('')
 
-    }
+    const Add = () => {
+        if(name !== ''){
+          dispatch
+          dispatch(dec(parseInt(name)))
+          setName
+          setName('')
+        }
+    
+        }
 
     return (
         <div>
@@ -33,7 +38,7 @@ const Resualt = () => {
              style={{backgroundColor:'#28803C', 
              fontSize:'20px',padding:'12.5px 52px'}} 
             disabled={count <= 1}
-              onClick={add}
+              onClick={Add}
              variant="contained"><VscChromeMinimize />
             </Button>
            
