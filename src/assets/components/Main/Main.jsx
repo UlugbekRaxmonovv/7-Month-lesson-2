@@ -25,7 +25,7 @@ const Main = () => {
            onChange={(e) => setName(e.target.value)}
             placeholder='Son kiriting..'/>
            </div>
-            <Button style={{backgroundColor:'#28803C',fontSize:'20px',padding:'12.5px 52px'}} 
+            <Button  style={{backgroundColor:'#28803C',fontSize:'20px',padding:'12.5px 52px'}} 
             onClick={handleIncrement } 
              variant="contained"><VscAdd />
             </Button>

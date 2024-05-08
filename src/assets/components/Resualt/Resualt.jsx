@@ -4,6 +4,7 @@ import { dec } from '../../../context/counterSlice';
 import Button from '@mui/material/Button';
 import { VscChromeMinimize } from "react-icons/vsc";
 import { useSelector } from 'react-redux';
+import './Resualt.css'
 
 
 
@@ -26,7 +27,7 @@ const Resualt = () => {
 
     return (
         <div>
-            
+      
             <div className="input">
            <input 
            type="number"  
